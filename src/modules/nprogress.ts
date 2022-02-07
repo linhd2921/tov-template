@@ -1,12 +1,12 @@
-import { router } from './router'
-import { App } from 'vue'
-import NProgress from 'nprogress'
+import { router } from "./router";
+import { App } from "vue";
+import NProgress from "nprogress";
 
 export default (app: App) => {
 	router.beforeEach(() => {
-		NProgress.start()
-	})
+		NProgress.start();
+	});
 	router.afterEach(() => {
-		NProgress.done()
-	})
-}
+		NProgress.done();
+	});
+};
